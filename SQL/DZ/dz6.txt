@@ -1,0 +1,13 @@
+use dz6
+
+db.createCollection('studenrs')
+
+db.students.insertMany( [{ firstname: "Ivan",
+  lastname: "Ivanov",
+  contact: { phone: { type: "cell", number: "01"} } },
+  { firstname: "Petr",
+  lastname: "Petrov",
+  contact: { phone: { type: "cell", number: "02"} } },
+  { firstname: "Alexey",
+  lastname: "Alexeev",
+  contact: { phone: { type: "cell", number: "03"} } } ]) 
